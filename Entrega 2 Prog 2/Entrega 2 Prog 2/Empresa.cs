@@ -13,19 +13,22 @@ namespace Entrega_2_Prog_2
 
         public Empresa()
         {
-            List<Cargo> listaCargos = new List<Cargo>();
-            List<Empleado> listaEmpleados = new List<Empleado>();
+            listaCargos = new List<Cargo>();
+            listaEmpleados = new List<Empleado>();
         }
 
-        public bool existeCargo(int numeroCargo)
+        public bool existeCargo(string nombreCargo)
         {
             bool existe = false;
-            if(listaCargos[numeroCargo] != null)
+            int index = 0;
+            while(index < listaCargos.Count && existe == false)
             {
-                existe = true;
+                if(listaCargos[index].Nombre == nombreCargo)
+                {
+                    existe = true;
+                }                
             }
-
-            return existe;           
+            return existe;
         }
 
         public void crearCargo(int unSueldo, string unNombre)
@@ -37,6 +40,7 @@ namespace Entrega_2_Prog_2
         public void registrarEmpleado(string unNombre, string unTelefono, Cargo unCargo)
         {
             Empleado unEmpleado = new Empleado(unNombre, unTelefono, unCargo);
+            listaEmpleados.Add(unEmpleado);
         }
 
         public List<Cargo> devolverListaCargos()
@@ -51,16 +55,14 @@ namespace Entrega_2_Prog_2
             
         public Cargo elegirCargo(int cargoElegido)
         {
-            return listaCargos[cargoElegido - 1];
+            return listaCargos[cargoElegido];
         }
 
-        public void aumentarSueldos(int porcentajeAumento, Cargo unCargo)
+        public int aumentarSueldos(int porcentajeAumento, Cargo unCargo)
         {
-            foreach(Cargo cargo in listaCargos)
-            {
-                if(cargo.Nombre == unCargo.Nombre)
-                cargo.Sueldo += (cargo.Sueldo * porcentajeAumento);
-            }
+            int nuevoSueldo = unCargo.Sueldo += (unCargo.Sueldo * porcentajeAumento);
+            unCargo.Sueldo = nuevoSueldo;
+            return nuevoSueldo;
         }
 
     }

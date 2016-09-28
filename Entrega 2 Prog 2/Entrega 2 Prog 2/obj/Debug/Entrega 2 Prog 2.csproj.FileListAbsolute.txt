@@ -1,1 +1,7 @@
 c:\users\fat\documents\visual studio 2015\Projects\Entrega 2 Prog 2\Entrega 2 Prog 2\bin\Debug\Entrega 2 Prog 2.exe.config
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\bin\Debug\Entrega 2 Prog 2.exe.config
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\obj\Debug\Entrega 2 Prog 2.csprojResolveAssemblyReference.cache
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\bin\Debug\Entrega 2 Prog 2.exe
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\bin\Debug\Entrega 2 Prog 2.pdb
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\obj\Debug\Entrega 2 Prog 2.exe
+C:\Users\Ninja\Desktop\Entrega 2 Prog 2\Entrega 2 Prog 2\obj\Debug\Entrega 2 Prog 2.pdb
